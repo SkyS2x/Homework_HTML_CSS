@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms Class</h1>
+
+    <!-- *** Form example 1 *** -->
+    <!-- In action => -->
+    <!-- In methode =>  -->
+    <form action="" method=" GET">
+      <!-- Form fields goes here -->
+
+      <label for="userName">Username:</label>
+      <input type="text" placeholder="Enter username" id="userName" />
+      <br />
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter password" id="password" />
+
+      <br />
+      <label for="Age">Age</label>
+      <input type="number" placeholder="Age" id="Age" />
+
+      <!-- Input type SUBMIT will create us Submit Button -->
+      <input type="submit" value="Login Type Submit" />
+
+      <!-- Button acts as input type submit BY DEFAULT -->
+      <button type="button">Login Type Button</button>
+    </form>
+
+    <hr />
+    <!-- *** Form Example 2 *** -->
+    <!-- If all radios for name attributes have same value , we achieve the behavious that the user can chose a single option -->
+    <form>
+      <p>What does WWW stands for</p>
+
+      <label for="weekendweekweek"> 1. Weekend week week</label>
+      <input type="radio" id="weekendweekweek" name="questionOne" />
+
+      <label for="weekewhatWho"> 2. What Why Who</label>
+      <input type="radio" id="weekewhatWho" name="questionOne" />
+
+      <label for="worldsWideWeb"> 3. World Whide Web</label>
+      <input type="radio" id="worldsWideWeb" name="questionOne" />
+    </form>
+    <hr />
+    <!-- *** Form Example 3 *** -->
+    <form>
+      <label for="birthDate"> Date of Birth</label>
+      <input type="date" id="birthDate" />
+      <br />
+
+      <label for="colorPicker"> Select your colour</label>
+      <input type="color" id="colorPicker" />
+    </form>
+
+    <hr />
+    <!-- *** Form Example 4 *** -->
+    <form>
+      <p> Enter the desired flavour</p>
+      <label for="caramela">Caramela</label>
+      <input type="checkbox" id="caramela" value="caramela" />
+
+      <label for="nutella">Nutella</label>
+      <input type="checkbox" id="nutella" value="nutella" />
+
+      <label for="blueberry">BlueBerry</label>
+      <input type="checkbox" id="blueberry" value="blueberry" />
+    </form>
+    <hr />
+    <!-- *** Form Example 5 *** -->
+
+    <form>
+      <fieldset>
+        <legend> Thank you for your additional feedback</legend>
+
+        <label for="email">Provide Email</label>
+        <input type="text" placeholder="Email:" id="email" required/>
+
+        <textarea minlength="10" placeholder="Enter comment here" cols="40" rows="10"></textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Enter your country origin</legend>
+        <label for="region">Region</label>
+        <select id="region">
+          <!-- Disaled attribute won`t allow this toption to be SELECTED -->
+           <!-- Selected means that this is option is pre-selected -->
+          <option disabled selected>Please select an option</option>
+         <option>Macedonia</option>
+         <option>USA</option>
+         <option>Japan</option>
+         <option>Germany</option>
+        </select>
+      </fieldset>
+      <button>Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
