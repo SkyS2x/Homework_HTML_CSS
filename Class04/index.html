@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tables in HTML</h1>
+
+    <h2>Basic Table</h2>
+    <table border="1" cellpadding="10" cellspacing="5">
+      <tbody>
+        <tr>
+          <td>Row 01, Column 01</td>
+          <td>Row 01, Column 02</td>
+          <td>Row 01, Column 03</td>
+        </tr>
+        <tr>
+          <td>Row 02, Column 01</td>
+          <td>Row 02, Column 02</td>
+          <td>Row 02, Column 03</td>
+        </tr>
+        <tr>
+          <td>Row 01, Column 01</td>
+          <td>Row 02, Column 02</td>
+          <td>Row 03, Column 03</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <table border="1" cellpadding="20" cellspacing="5">
+      <caption>
+        Empty Table
+      </caption>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <table border="1" cellpadding="10" cellspacing="5">
+      <caption>
+        Fruit Table
+      </caption>
+      <thead>
+        <tr>
+          <th>Banana</th>
+          <th>Kiwi</th>
+          <th>Orange</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td bgcolor="Yellow">Yellow</td>
+          <td bgcolor="Green">
+            <a href="https://www.kiwi.com" target="_blank">Green</a>
+          </td>
+          <td bgcolor="Orange">
+            <img
+              alt="Orange fruit"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg"
+              width="100"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <table border="1" cellpadding="10" cellspacint="5">
+      <caption>
+        Calendar
+      </caption>
+      <calgroup>
+        <col bgcolor="aqua">
+      </calgroup>
+      <tr>
+        <th></th>
+        <th>8:00</th>
+        <th>9:00</th>
+        <th>10:00</th>
+        <th>11:00</th>
+        <th>12:00</th>
+      </tr>
+      <tbody>
+        <tr>
+          <th>Monday</th>
+          <td colspan="2">Math</td>
+          <td>Sport</td>
+          <td colspan="2">Drawing</td>
+          <!--<td></td>-->
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td>Music</td>
+          <td colspan="2">Sport</td>
+          <td rowspan="2">Programing</td>
+          <td>Biology</td>
+          <!--<td></td>-->
+        </tr>
+        <tr>
+          <th>Wednsday</th>
+          <td>Art</td>
+          <td>Math</td>
+          <td>Gym</td>
+          <td>Music</td>
+        </tr>
+      </tbody>
+    </table>
+    <br/>
+    <hr/>
+    <hr/>
+<h2> Complete table structure</h2>
+    <table border="1" cellspacing="5" cellpadding="10">
+        <caption>QuinShift Academy Timetable (November week 02)</caption>
+        <thead>
+            <tr>
+                <th>Groups</th>
+                <th>04.11 Monday</th>
+                <th>05.11 Tuesday</th>
+                <th>06.11 Wednsday</th>
+                <th>07.11 Thursday</th>
+                <th>08.11 Friday</th>
+                <th>9.11 Saturday</th>
+                <th>10.10 Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <th>G1</th>
+            <td bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class04)</td>
+            <td bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class05)</td>
+            <td colspan="3" bgcolor="lightgreen"></td>
+         </tr>
+         <tr><th>G2</th>
+            <td>HTML & CSS (Class04)</td>
+            <td bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class05)</td>
+            <td  bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class06)</td>
+            <td colspan="2" bgcolor="lightgreen"></td>
+         <tr><th>G3</th>
+            <td bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class04)</td>
+            <td bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class05)</td>
+            <td bgcolor="lightgreen"></td>
+            <td rowspan="2" colspan="2" bgcolor="lightgreen"></tr>
+         <tr><th>G4</th>
+            <td>HTML & CSS (Class04)</td>
+            <td bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class05)</td>
+            <td  bgcolor="lightgreen"></td>
+            <td>HTML & CSS (Class06)</td>
+         <tr><th>G5</th>
+            <td rowspan="2" bgcolor="lightgreen"></td>
+            <td rowspan="2">HTML & CSS (Class04)</td>
+            <td rowspan="2" bgcolor="lightgreen"></td>
+            <td rowspan="2">HTML & CSS (Class05)</td>
+            <td rowspan="2" colspan="3" bgcolor="lightgreen"></tr>
+         <tr><th>G6</th>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Time</th>
+                <td colspan="5" align="center">17:30 - 20:45</td>
+                <td colspan="2">Weekend</td>
+            </tr>
+        </tfoot>
+    </table>
+</html>
