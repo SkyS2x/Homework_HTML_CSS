@@ -1,0 +1,66 @@
+.mainBox {
+    border: 1px solid red;
+    max-width: 400px;
+    max-height: 400px;
+    justify-content: flex-start;
+    
+}
+
+.top {
+  display: flex;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+.box {
+  width: 80px;
+  height: 100px;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.red {
+  width: 100px;
+  height: 200px;
+  background-color: red;
+  border: 5px solid black;
+  flex-grow: 2;
+}
+
+.bottom {
+    display: flex;
+    max-width: 400px;
+    max-height: 200px;
+    flex-wrap: nowrap;
+}
+
+.blue {
+  width: 80px;
+  height: 100px;
+  background-color: blue;
+  border: 5px solid black;
+  flex-grow: 0;
+}
+
+#white {
+  width: 100px;
+  height: 100px;
+  background-color: whitesmoke;
+  border: 5px solid black;
+  flex-grow: 1;
+}
+
+#yellow {
+
+  background-color: yellow;
+  border: 5px solid black;
+  width: 10px;
+  height: 45px;
+}
+
+#whiteTop {
+    background-color: white;
+    border: 5px solid black;
+    width: 10px;
+    height: 45px;
+}
